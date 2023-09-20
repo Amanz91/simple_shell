@@ -13,7 +13,7 @@ char *read_line(void)
 
 	if (num_ch == -1)
 	{
-		if (*l_ptr == '\n')
+		if (feof(stdin))
 		{
 			free(l_ptr);
 			exit(EXIT_SUCCESS);
