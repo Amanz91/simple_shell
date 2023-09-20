@@ -21,7 +21,7 @@ int launch(char **args)
 	if (pid ==  0)
 	{
 		if (execve(tru_cmd, args, environ) == -1)
-			perror("./sh");
+			_puts("./shell: No such file or directory\n");
 	}
 	else if (pid < 0)
 	{
