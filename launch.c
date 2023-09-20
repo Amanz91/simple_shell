@@ -24,7 +24,6 @@ int launch(char **args)
 		{
 			_puts("./shell: No such file or directory\n");
 		}
-		exit(EXIT_FAILURE);
 	}
 	else if (pid < 0)
 	{
