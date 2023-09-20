@@ -13,6 +13,7 @@
 #include <errno.h>
 
 #define TOK_DELIM " \n"
+extern char **environ;
 
 char *read_line(void);
 char **tok_line(char *line);

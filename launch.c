@@ -20,7 +20,7 @@ int launch(char **args)
 
 	if (pid ==  0)
 	{
-		if (execve(tru_cmd, args, NULL) == -1)
+		if (execve(tru_cmd, args, environ) == -1)
 			perror("./sh");
 	}
 	else if (pid < 0)
