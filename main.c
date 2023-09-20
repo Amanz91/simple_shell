@@ -9,7 +9,7 @@ int main(int ac, char **argv)
 {
 	char *line;
 	char **args;
-	int status;
+	int status = -1;
 
 	if (ac > 1)
 	{
@@ -27,6 +27,6 @@ int main(int ac, char **argv)
 		free(args);
 		if (status == 0)
 			exit(status);
-	} while (status);
+	} while (status == -1);
 	return (0);
 }
