@@ -27,6 +27,6 @@ int main(int ac, char **argv)
 		free(args);
 		if (status == 0)
 			exit(status);
-	} while (1);
+	} while (status == 1);
 	return (0);
 }
