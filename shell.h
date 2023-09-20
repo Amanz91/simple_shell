@@ -23,6 +23,7 @@ int my_help(char **args);
 int my_exit(char **args);
 int execute(char **args);
 int launch(char **args);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _strlen(char *c);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);

@@ -27,7 +27,7 @@ char **tok_line(char *line)
 		if (i >= bufsize)
 		{
 			bufsize += bufsize;
-			fulltok = realloc(fulltok, bufsize * sizeof(char *));
+			fulltok = _realloc(fulltok, bufsize, bufsize * sizeof(char *));
 			if (!fulltok)
 			{
 				perror("allocation error : tok_line");
