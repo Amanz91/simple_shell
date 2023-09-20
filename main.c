@@ -19,6 +19,7 @@ int main(int ac, char **argv)
 		if (isatty(STDIN_FILENO) == 1)
 		{
 		_puts("($) ");
+		}
 		line = read_line();
 		args = tok_line(line);
 		status = execute(args);
@@ -26,16 +27,6 @@ int main(int ac, char **argv)
 		free(args);
 		if (status == 0)
 			exit(status);
-		}
-		else
-		{line = read_line();
-                args = tok_line(line);
-                status = execute(args);
-                free(line);
-                free(args);
-		if (status >= 0)
-			exit(status);		
-		}
 	} while (status == -1);
 
 	return (0);
