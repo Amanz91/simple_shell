@@ -23,8 +23,8 @@ int launch(char **args)
 		if (execve(tru_cmd, args, environ) == -1)
 		{
 			_puts("./shell: No such file or directory\n");
-			exit(EXIT_FAILURE);
 		}
+		exit(EXIT_FAILURE);
 	}
 	else if (pid < 0)
 	{
