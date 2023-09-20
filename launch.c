@@ -15,7 +15,7 @@ int launch(char **args)
 		cmd = args[0];
 		tru_cmd = find_cmd(cmd);
 	}
-	if (tru_cmd != NULL)
+	if (!tru_cmd)
 		pid = fork();
 
 	if (pid ==  0)
