@@ -16,7 +16,7 @@ int main(int ac, char **argv)
 		argv[1] = NULL;
 	}
 	do {
-		if (isatty(STDIN_FILENO) == 1)
+		/*if (isatty(STDIN_FILENO) == 1)*/
 		{
 		_puts("($) ");
 		}
